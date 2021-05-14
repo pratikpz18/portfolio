@@ -33,3 +33,29 @@
   font-size: large;
   font-weight: bold;
 }
+
+.main-text{
+  text-align: left;
+  width: 50vw;
+  margin:0 0 3em 4em;
+}
+
+.technologies{
+  text-align: left;
+  margin:0 0 3em 4em;
+}
+
+.ul{
+  display: flex;
+  padding-right: 12px;
+  width: 50vw;
+  flex-wrap: wrap;
+}
+
+.li{
+  border: 1px solid grey;
+  border-radius: 12px;
+  padding: 8px 10px;
+  list-style-type: none;
+  margin:0 10px 8px 0;
+}
