@@ -59,3 +59,63 @@
   list-style-type: none;
   margin:0 10px 8px 0;
 }
+
+.project{
+  margin: 1rem 0;
+}
+
+.projects-block{
+  width: 80vw;
+}
+
+.project-data{
+  position: relative;
+  display: flex;
+  width: 97vw;
+  border: 1px solid green;
+  margin: 1.2rem 0.5rem;
+  padding: 1rem;
+}
+
+.description{
+  position: relative;
+  width: 40vw;
+  height: fit-content;
+  border: 1px solid black;
+  margin:0 3rem;
+  word-wrap: wrap;
+  padding: 0.5rem;
+  align-self: center;
+}
+
+.project-info{
+  width: 45vw;
+  border: 1px solid red;
+}
+
+.img{
+  width: 40vw;
+  height: 40vh;
+  padding: 0.5rem;
+}
+
+.Contact{
+  margin: 1rem 0;
+}
+
+.Form{
+  width: 40vw;
+  margin-left: auto;
+}
+
+.Message{
+  width: 26vw;
+}
+
+.Label{
+  margin-right: 20rem;
+}
+
+.Button{
+  margin-right: 28rem;
+}

@@ -1,30 +1,30 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 const Main = () => {
     
     return (
         <div>
-            <div>
+            <div className="main-text">
                 <span>Hello !<h3>Im Pratik Zinjurde</h3></span>
                 <span>Aspiring Web Developer</span>
-                <span>I do Web Development and Competetive Programming</span>
+                <span> I do Web Development and Competetive Programming</span>
             </div>
-            <div>
+            <div className="technologies">
                 <h4>Technologies I worked with</h4>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Bootstrap</li>
-                    <li>JavaScript</li>
-                    <li>Node Js</li>
-                    <li>Express Js</li>
-                    <li>React Js</li>
-                    <li>MongoDB</li>
-                    <li>Firebase</li>
-                    <li>Flask</li>
-                    <li>MySQL</li>
-                    <li>C++</li>
-                    <li>Python</li>
+                <ul className="ul">
+                    <li className="li">HTML</li>
+                    <li className="li">CSS</li>
+                    <li className="li">Bootstrap</li>
+                    <li className="li">JavaScript</li>
+                    <li className="li">Node Js</li>
+                    <li className="li" >Express Js</li>
+                    <li className="li">React Js</li>
+                    <li className="li">MongoDB</li>
+                    <li className="li">Firebase</li>
+                    <li className="li">Flask</li>
+                    <li className="li">MySQL</li>
+                    <li className="li">C++</li>
+                    <li className="li">Python</li>
                 </ul>
             </div>
         </div>
