@@ -1,23 +1,44 @@
 import React, { useEffect, useState } from 'react';
+import db from '../firebase';
 
 const Projects = () => {
-    
+    const [projects,setProjects] = useState([]);
+
+    useEffect(() => {
+        db
+        .collection('projects')
+        .onSnapshot((snapshot) => {
+            setProjects(
+                snapshot.docs.map(doc => ({
+                    projectDescription:doc.data().projectDescription,
+                    projectName: doc.data().projectName,
+                    projectUrl:doc.data().projectUrl,
+                    projectImg:doc.data().projectImg,
+                }
+                ))
+            )
+        })
+    },[])
+    console.log(projects)
+
     return (
-        <div>
-            <div>
-                <h2>Project 1</h2>
-                <img alt="Project 1"></img>
-                <p>Description :</p>
-            </div>
-            <div>
-                <h2>Project 2</h2>
-                <img alt="Project 2"></img>
-                <p>Description :</p>
-            </div>
-            <div>
-                <h2>Project 3</h2>
-                <img alt="Project 3"></img>
-                <p>Description :</p>
+        <div className="project">
+            <h2>Projects</h2>
+            <div className="projects-block">
+                {
+                    projects.map((project,index) => (
+                        <div className="project-data" key={index}>
+                            <div className="description">
+                                <span>{project.projectDescription}</span><br></br>
+                                <a href={project.projectUrl}>Code</a>
+                            </div>
+                            <div className="project-info">
+                                <h4 className="project-name">{project.projectName}</h4>
+                                <img src={project.projectImg} alt={project.projectName} className="img"></img>
+                            </div>
+                        </div>
+                    ))
+                }
             </div>
         </div>
     )
