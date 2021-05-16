@@ -4,6 +4,7 @@ import NavbarComponent from './components/NavbarComponent'
 import Main from './components/Main';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Main></Main>
       <Projects></Projects>
       <Resume></Resume>
+      <Contact></Contact>
     </div>
   );
 }
