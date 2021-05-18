@@ -60,7 +60,7 @@ const Contact = () => {
             </Form>
         </div>
             
-            {/* Footer */}
+            {/* Footer added*/}
             <div className="footer">  
                 <Navbar bg="dark" variant="dark" className="footer-data">
                     <Container>
