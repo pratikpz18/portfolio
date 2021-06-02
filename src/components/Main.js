@@ -3,7 +3,7 @@ import React from 'react';
 const Main = () => {
     
     return (
-        <div>
+        <div className="profileimg">
             <div className="main-text">
                 <span>Hello !<h3>Im Pratik Zinjurde</h3></span>
                 <span>Aspiring Web Developer</span>
