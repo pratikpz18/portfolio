@@ -9,8 +9,6 @@ import Contact from './components/Contact';
 function App() {
   return (
     <div className="App">
-      <div className="container">
-      </div>
       <NavbarComponent></NavbarComponent>
       <Main></Main>
       <Projects></Projects>
