@@ -176,7 +176,6 @@ html {
 
 ::-webkit-scrollbar{
   width: 0.7rem;
-  height: 0.2rem;
 }
 
 ::-webkit-scrollbar-thumb{
