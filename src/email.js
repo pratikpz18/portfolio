@@ -1,7 +1,7 @@
 const email = [
-   'YOUR_Service_ID',
-   'YOUR_Template_ID',
-   'YOUR_User_IDs'
+   'service_m3s1e7b',
+   'template_bmi02wp',
+   'user_SYOCvmB3vEymNddzBDWRY'
 ]
 
 export default email;
