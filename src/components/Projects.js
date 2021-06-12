@@ -7,19 +7,19 @@ const Projects = () => {
     const [projects,setProjects] = useState([]);
 
     useEffect(() => {
-        // db
-        // .collection('projects')
-        // .onSnapshot((snapshot) => {
-        //     setProjects(
-        //         snapshot.docs.map(doc => ({
-        //             projectDescription:doc.data().projectDescription,
-        //             projectName: doc.data().projectName,
-        //             projectUrl:doc.data().projectUrl,
-        //             projectImg:doc.data().projectImg,
-        //         }
-        //         ))
-        //     )
-        // });
+        db
+        .collection('projects')
+        .onSnapshot((snapshot) => {
+            setProjects(
+                snapshot.docs.map(doc => ({
+                    projectDescription:doc.data().projectDescription,
+                    projectName: doc.data().projectName,
+                    projectUrl:doc.data().projectUrl,
+                    projectImg:doc.data().projectImg,
+                }
+                ))
+            )
+        });
 
     },[])
     console.log(projects)
@@ -31,7 +31,7 @@ const Projects = () => {
         <div className="project">
             <h2>Projects</h2>
             <div className="projects-block">
-                {/* {
+                {
                     projects.map((project,index) => (
                         <div data-aos="fade-right"
                             data-aos-offset="250"
@@ -47,7 +47,7 @@ const Projects = () => {
                             </div>
                         </div>
                     ))
-                } */}
+                }
             </div>
         </div>
     )
