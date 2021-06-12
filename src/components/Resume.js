@@ -3,10 +3,10 @@ import React, { useEffect, useState } from 'react';
 const Resume = () => {
     
     return (
-        <div>
-            <h3>Click Below Button to download Resume</h3>
+        <div className="Resume">
+            <h6>Click Below Button to download Resume</h6>
             <button className="download-btn">
-                <a className="download-btn" href="../resume.pdf" download="Pratik Resume">
+                <a className="download-btn-a" href="../resume.pdf" download="Pratik Resume">
                 Download Resume
                 </a>
             </button>
