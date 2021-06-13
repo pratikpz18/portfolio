@@ -108,13 +108,45 @@ html {
 }
 
 .Contact{
-  margin: 2rem 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+.contact-heading{
+  text-decoration: underline;
+  margin-top: 1rem;
+}
+
+.contact-text{
+  width: 40vw;
+  margin: 1.4rem 14rem;
+  font-size: larger;
+}
+
+.contact-headline{
+  word-wrap: wrap;
+  width: 21vw;
+  margin: 1.5rem 0 0 2rem;
+  color: var(--cyan);
+  font-weight: 600;
+}
+
+.fa-envelope-open-o{
+  font-size: 6rem;
+  color: var(--bs-gray);
+}
+
+.contact-form{
+  position: relative;
+  width: 40vw;
+  margin-left: 6vw;
 }
 
 .Form{
-  width: 40vw;
-  margin-left: auto;
-  padding: 1rem;
+  padding: 0 0 0 6rem;
+  font-size: larger;
+  font-weight: 600;
 }
 
 .Name
@@ -129,7 +161,7 @@ html {
 }
 
 .Message{
-  width: 25vw;
+  width: 22.5vw;
   margin-bottom: 1.2rem;
 }
 
@@ -139,23 +171,36 @@ html {
 
 .Button{
   margin-right: 28rem;
+  width: 8vw;
+}
+
+.submit-btn{
+  font-size: large;
+  font-weight: 600;
+  padding-top: 0.4rem;
+}
+
+.fa-paper-plane-o{
+  padding: 0 0 0 0.4rem;
 }
 
 .footer{
   position: relative;
-  font-size: small;
-}
-
-.footer-data{
-  height: 8vh;
+  background-color: var(--gray-dark);
+  color: whitesmoke;
+  height: 5vh;
+  margin-top: 1rem;
 }
 
 .icons{
   font-size: x-large;
 }
 
-.brand{
-  font-size: 16px;
+.footer-text{
+  position: relative;
+  text-align: left;
+  font-size: 1.4rem;
+  right: 28vw;
 }
 
 .download-btn{
@@ -166,7 +211,7 @@ html {
   outline: none;
   padding: 0.5rem 1.5rem;
   background-color: var(--bs-gray);
-  margin-top: 0.45rem;
+  margin: 0.45rem 0;
 }
 
 .download-btn-a{
