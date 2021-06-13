@@ -25,8 +25,15 @@ const Contact = () => {
 
     return (
         <div>
+            <h2 className="contact-heading">Contact Page</h2>
             <div className="Contact">
-            <h2>Contact Page</h2>
+            <div className="contact-text">
+                <i className="fa fa-envelope-open-o" aria-hidden="true"></i>
+                <div className="contact-headline">
+                    <span>If you have any questions or need clarifications you can use the form.I will reach to you soon.</span>
+                </div>
+            </div>
+            <div className="contact-form">
             <Form className="Form" onSubmit={handleSubmit}>
             <Form.Group as={Row} controlId="formHorizontalEmail">
                     <Form.Label column sm={1} className="Name">
@@ -55,22 +62,15 @@ const Contact = () => {
                 </Form.Group>
 
                 <Button variant="primary" type="submit" className="Button">
-                    Submit
+                    <span className="submit-btn">Submit<i className="fa fa-paper-plane-o" aria-hidden="true"></i></span>
                 </Button>
             </Form>
+            </div>
         </div>
             
             {/* Footer added*/}
             <div className="footer">  
-                <Navbar bg="dark" variant="dark" className="footer-data">
-                    <Container>
-                        <NavbarBrand className="brand">Copyright© Pratik Zinjurde &nbsp;<i className="fa fa-envelope-o" aria-hidden="true">&nbsp;zinjurdepratik.pz@gmail.com</i></NavbarBrand>
-                    </Container>
-                    <Navbar.Collapse className="justify-content-end">
-                    <Navbar.Text className="icons">
-                    </Navbar.Text>
-                </Navbar.Collapse>
-                </Navbar>
+                <span className="footer-text">Designed and Developed by Pratik Zinjurde ©2021</span>                    
             </div>
         </div>
     )
