@@ -25,7 +25,7 @@ html {
 
 
 .link{
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: bold;
   margin-right: 0.6rem;
 }
@@ -66,6 +66,14 @@ html {
   margin: 1rem 0;
 }
 
+.project-headline{
+  text-decoration: underline;
+}
+
+.fa-arrow-down{
+  font-size: xx-large;
+}
+
 .projects-block{
   width: 100vw;
 }
@@ -75,15 +83,15 @@ html {
   display: flex;
   width: 97vw;
   border: 1px solid green;
-  margin: 1.2rem 0.5rem;
+  margin: 1.4rem;
   padding: 1rem;
 }
 
 .description{
-  width: 40vw;
+  width: 42vw;
   height: fit-content;
   border: 1px solid black;
-  margin:0 3rem;
+  margin:0 2rem;
   word-wrap: wrap;
   padding: 0.5rem;
   align-self: center;
@@ -99,6 +107,26 @@ html {
   border: 1px solid red;
   /* margin-right: 55%;
   margin-left: -40%; */
+}
+
+.project-1,
+.project-3{
+  flex-direction: column-reverse;
+}
+
+.description-1,
+.description-3{
+  position: absolute;
+  margin-left: 46vw;
+  margin-bottom: 8vw;
+  width: 44.5vw;
+}
+
+.project-info-1,
+.project-info-3{
+  position: relative;
+  width: 42vw;
+  margin-left: 1.8rem;
 }
 
 .img{
@@ -180,6 +208,10 @@ html {
   padding-top: 0.4rem;
 }
 
+.Button:hover{
+  transform: scale(1.02);
+}
+
 .fa-paper-plane-o{
   padding: 0 0 0 0.4rem;
 }
@@ -188,7 +220,7 @@ html {
   position: relative;
   background-color: var(--gray-dark);
   color: whitesmoke;
-  height: 5vh;
+  height: 8vh;
   margin-top: 1rem;
 }
 
@@ -198,13 +230,12 @@ html {
 
 .footer-text{
   position: relative;
-  text-align: left;
-  font-size: 1.4rem;
-  right: 28vw;
+  font-size: 1.6rem;
+  top: 1.5vh;
 }
 
 .download-btn{
-  font-size: large;
+  font-size: x-large;
   font-weight: bold;
   border-radius: 1.2rem;
   border: none;
@@ -212,11 +243,20 @@ html {
   padding: 0.5rem 1.5rem;
   background-color: var(--bs-gray);
   margin: 0.45rem 0;
+  width: 13vw;
+}
+
+.download-btn:hover{
+  transform: scale(1.1);
 }
 
 .download-btn-a{
   text-decoration: none;
   color: ivory;
+}
+
+.download-btn-a:hover{
+  color: var(--light);
 }
 
 ::-webkit-scrollbar{
@@ -225,5 +265,5 @@ html {
 
 ::-webkit-scrollbar-thumb{
   background: var(--bs-gray);
-  border-radius: 0.4rem;
+  border-radius: 0.2rem;
 }
