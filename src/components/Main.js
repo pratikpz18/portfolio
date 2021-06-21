@@ -6,7 +6,7 @@ const Main = () => {
         <div className="profileimg">
             <div className="main-text">
                 <span>Hello !<h3>Im Pratik Zinjurde</h3></span>
-                <span>Aspiring Web Developer</span>
+                <span>Aspiring Full Stack Developer</span><br></br>
                 <span> I do Web Development and Competetive Programming</span>
             </div>
             <div className="technologies">
