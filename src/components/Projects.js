@@ -38,12 +38,12 @@ const Projects = () => {
                             data-aos-easing="ease-in-sine"
                             className={`project-data project-${index}`} key={index}>
                             <div className={`description description-${index}`}>
+                                <h4 className="project-name">{project.projectName}</h4>
                                 <span>{project.projectDescription}</span><br></br>
-                                <a href={project.projectUrl}>Code</a>
+                                <a href={project.projectUrl} className="link-to-code">Link to Code</a>
                             </div>
                             <div className={`project-info project-info-${index}`}>
-                                <h4 className="project-name">{project.projectName}</h4>
-                                <img src={project.projectImg} alt={project.projectName} className="img"></img>
+                                <img src={project.projectImg} alt={project.projectName} className="project-img"></img>
                             </div>
                         </div>
                     ))
