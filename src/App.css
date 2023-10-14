@@ -25,7 +25,6 @@ html {
   height: 480px;
 }  
 
-
 .link{
   font-size: 2.6rem;
   font-weight: bold;
@@ -313,7 +312,6 @@ html {
 
 @media (max-width: 768px) {
   body {
-    overflow-x: hidden; /* Hide horizontal scrolling for smaller screens */
     text-align: center;
     width: 90%; /* Optionally set a specific width for smaller screens */
   }
@@ -406,7 +404,7 @@ html {
 
   .contact-form{
     position: relative;
-    width: 50vw;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -422,7 +420,6 @@ html {
     width: 100%;
   }
 
-
   .Button{
     margin-right: 28rem;
     width: 100%;
@@ -437,9 +434,8 @@ html {
 
 /* Media query for small screens */
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   body {
-    overflow-x: hidden !important; /* Hide horizontal scrolling for smaller screens */
     text-align: center;
     width: 100%; /* Optionally set a specific width for smaller screens */
   }
@@ -472,8 +468,9 @@ html {
   }
   
   .project{
-    margin: 80% 0 0 0;
+    margin: 65% 0 0 0;
     text-align: center;
+    width: 100%;
   }
 
   .projects-block{
@@ -481,29 +478,13 @@ html {
     text-align: center;
   }
 
-  .project-data{
-    width: 80%;
-    display: inline-block;
-  }
-
-  .project-img{
-    width: 100%;
-    height: 50vh;
-  }
-
-  .project-info{
-    width: 100%;
-  }
-  
-  .project-info-1,
-  .project-info-3{
-    width: 100%;
-    margin-left: 0;
-  }
-  
-  .project-info-1 .project-img,
-  .project-info-3 .project-img{
-    width: 100%;
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
   }
 
   .Resume {
@@ -520,7 +501,7 @@ html {
   }
 
   .contact-form{
-    width: 80%;
+    width: 60%;
     margin: 0;
     padding: 0;
   }
@@ -547,35 +528,3 @@ html {
     font-size: 0.7rem;
   }
 }
-
-/* Media query for medium screens */
-
-/* @media (min-width: 769px) and (max-width: 1024px) {
-  .App {
-    font-size: 110%;
-  }
-
-  .main-text {
-    font-size: 0.7em;
-    width: 70%;
-    margin: 0 0 2em 2em;
-  }
-
-  .ul {
-    width: 70%;
-  }
-
-  .li {
-    font-size: large;
-  }
-
-  .description {
-    width: 70%;
-    margin: 0 2rem;
-  }
-
-  .contact-text {
-    width: 70%;
-    margin: 0.7rem 10%;
-  }
-} */

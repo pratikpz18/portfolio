@@ -1,5 +1,5 @@
-import React,{ useState } from 'react';
-import emailjs from 'emailjs-com';
+import React,{ useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import emaildata from '../email';
 import {Form,Col,Row,Button,Navbar,Container,NavbarBrand} from 'react-bootstrap';
 
@@ -7,12 +7,12 @@ const Contact = () => {
     const [name,setName]=useState('');
     const [email,setEmail]=useState('');
     const [message,setMessage]=useState('');
+    const form = useRef();
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // console.log(name,email,message);
-        // console.log(emaildata);
-        emailjs.sendForm(emaildata[0], emaildata[1], event.target, emaildata[2])
+
+        emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, {name, message, email}, process.env.REACT_APP_PUBLIC_KEY)
             .then((result) => {
                 alert("Message Sent, We will get back to you shortly", result.text);
                 setName('');
@@ -34,7 +34,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className="contact-form">
-            <Form className="Form" onSubmit={handleSubmit}>
+            <Form ref={form} className="Form" onSubmit={handleSubmit}>
             <Form.Group as={Row} controlId="formHorizontalEmail">
                     <Form.Label column sm={1} className="Name">
                     Name
