@@ -9,10 +9,32 @@ import Contact from './components/Contact';
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
 const override = css`
-  position:absolute;
-  background-color:rgb(235, 235, 235);
+  position: absolute;
   height:100vh;
-  width:100vw;
+  width: 100%;
+  ::before {
+    content: "Happiness💫";
+    bottom: 5%; /* Align to the top */
+    right: 5%; /* Align to the right */
+    position: absolute;
+    font-weight:bold;
+  }
+
+  @media (max-width: 640px) {
+    height:80vh;
+    width: 100%; /* Set it to 100% to allow text to wrap properly */
+    right:4%;
+    ::before {
+      width: 100%;
+      content: "Happiness💫";
+      font-weight: bold;
+      font-size: 12px;
+      bottom: 0; /* Align to the top */
+      left: 25%; /* Align to the right */  
+      height: 0 !important;
+    }
+  }
+
 `;
 
 function App() {
