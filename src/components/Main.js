@@ -21,10 +21,13 @@ const Main = () => {
                     <li className="li">React Js</li>
                     <li className="li">MongoDB</li>
                     <li className="li">Firebase</li>
-                    <li className="li">Flask</li>
+                    <li className="li">Test Automation</li>
                     <li className="li">MySQL</li>
+                    <li className="li">REST API</li>
                     <li className="li">C++</li>
                     <li className="li">Python</li>
+                    <li className="li">Ruby</li>
+                    <li className="li">CI/CD</li>
                 </ul>
             </div>
         </div>

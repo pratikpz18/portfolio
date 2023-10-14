@@ -259,7 +259,7 @@ html {
 }
 
 .footer{
-  position: relative;
+  margin-top: auto; /* Push the footer to the bottom */
   background-color: rgb(100, 103, 104);
   color: whitesmoke;
   height: 4vh;
@@ -441,7 +441,7 @@ html {
   body {
     overflow-x: hidden !important; /* Hide horizontal scrolling for smaller screens */
     text-align: center;
-    width: 75%; /* Optionally set a specific width for smaller screens */
+    width: 100%; /* Optionally set a specific width for smaller screens */
   }
 
   .main-text {
@@ -465,16 +465,15 @@ html {
   }
 
   .profileimg{
-    background: url(./profile.png) no-repeat left;
+    background: url(./profile.png) no-repeat right;
     height: 480px;
     background-size: contain; /* Adjust as needed for smaller screens */
-    width: 90%; /* Optionally set a specific width for smaller screens */
+    width: 120%; /* Optionally set a specific width for smaller screens */
   }
   
   .project{
-    margin: 40% 0 0 0;
+    margin: 80% 0 0 0;
     text-align: center;
-    width: 80vw;
   }
 
   .projects-block{
@@ -508,12 +507,12 @@ html {
   }
 
   .Resume {
-    width: 80%;
+    width: 100%;
   }
 
   .contact-heading{
     margin-top: 1rem;
-    width: 80%;
+    width: 100%;
   }
 
   .contact-text{
@@ -527,25 +526,25 @@ html {
   }
 
   .Form{
-    width: 90%;
+    width: 100%;
   }
 
   .Message{
-    width: 70%;
+    width: 100%;
   }
 
   .Button{
     margin-left: 4rem;
-    width: 40%;
+    width: 60%;
   }
 
   .footer{
-    height: 2vh;
-    width: 80%;
+    margin-top: auto;
+    width: 100%;
   }
 
   .footer-text{
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 }
 
