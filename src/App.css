@@ -23,7 +23,7 @@ html {
   position: relative;
   background: url(./profile.png) no-repeat right;
   height: 480px;
-}  
+}
 
 .link{
   font-size: 2.6rem;
@@ -46,12 +46,34 @@ html {
   color: rgb(0, 172, 238);
 }
 
-.main-text{
-  font-size: 1.4em;
+.intro {
+  background-color: inherit;
+  width: 45vw;
   text-align: left;
-  width: 48vw;
   margin:0 0 2em 3em;
-  padding-top: 2em;
+  padding: 3em 0 0 1.5em;
+}
+
+.intro h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.intro h2 {
+  font-size: 24px;
+  color: #555;
+}
+
+.intro p {
+  font-size: 18px;
+  color: #777;
+  margin-top: 20px;
+}
+
+.intro:hover {
+  transform: scale(1.06);
+  transition: background-color 0.3s, transform 0.3s;
+  padding-bottom: 0.1em;
 }
 
 .technologies{
@@ -320,15 +342,25 @@ html {
     font-size: 100%;
   }
 
-  .main-text {
+  .intro {
+    padding: 10px; /* Reduce padding for smaller screens */
     font-size: 0.8em;
-    width: 90%;
+    width: 40%;
     margin: 0 0 2em 1em;
+    word-wrap: break-word;
   }
 
+  .intro h1 {
+    font-size: 1.2em;
+  }
+
+  .intro h2 {
+    font-size: 1em;
+  }
+  
   .technologies{
     text-align: left;
-    margin:20em 0 2em 1em;
+    margin:16em 0 2em 0;
   }
 
   .ul {
@@ -340,7 +372,7 @@ html {
   }
 
   .project{
-    margin: 16rem 0 0 0;
+    margin: 15em 0 0 0;
   }
 
   .projects-block{
@@ -440,16 +472,28 @@ html {
     width: 100%; /* Optionally set a specific width for smaller screens */
   }
 
-  .main-text {
+  .intro {
     font-size: 0.7em;
     width: 30%;
     margin: 0 0 2em 1em;
+    padding: 10em 0 0 1.5em;
     word-wrap: break-word;
+  }
+
+  .intro h2{
+    font-size: 1.15em;
+    font-weight: 600;
+  }
+
+  .intro p {
+    font-size: 1.5em;
+    color: rgb(151, 151, 151);
+    margin-top: 20px;
   }
 
   .technologies{
     text-align: left;
-    margin:62% 0 0 1%;
+    margin:0 0 0 1%;
   }
 
   .ul {
@@ -468,7 +512,7 @@ html {
   }
   
   .project{
-    margin: 75% 0 0 0;
+    margin: 25em 0 0 0;
     text-align: center;
     width: 100%;
   }

@@ -1,7 +1,6 @@
 import React,{ useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import emaildata from '../email';
-import {Form,Col,Row,Button,Navbar,Container,NavbarBrand} from 'react-bootstrap';
+import {Form,Col,Row,Button} from 'react-bootstrap';
 
 const Contact = () => {
     const [name,setName]=useState('');

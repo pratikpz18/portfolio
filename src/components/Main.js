@@ -4,10 +4,10 @@ const Main = () => {
     
     return (
         <div className="profileimg">
-            <div className="main-text">
-                <span>Hello !<h3>Im Pratik Zinjurde</h3></span>
-                <span>Aspiring Full Stack Developer</span><br></br>
-                <span> I do Web Development and Competetive Programming</span>
+            <div className="intro">
+                <h1>Hello there!</h1>
+                <h2>I'm Pratik Zinjurde, a Full Stack Developer.</h2>
+                <p class="my-description">Welcome to my website, where I showcase my web development projects. Explore my work and get in touch if you have any questions or exciting projects in mind.</p>
             </div>
             <div className="technologies">
                 <h4>Technologies I worked with</h4>
@@ -17,7 +17,7 @@ const Main = () => {
                     <li className="li">Bootstrap</li>
                     <li className="li">JavaScript</li>
                     <li className="li">Node Js</li>
-                    <li className="li" >Express Js</li>
+                    <li className="li">Express Js</li>
                     <li className="li">React Js</li>
                     <li className="li">MongoDB</li>
                     <li className="li">Firebase</li>
